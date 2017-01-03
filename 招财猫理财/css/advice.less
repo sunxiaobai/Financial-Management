@@ -1,0 +1,125 @@
+@import "basic.less";
+// 变量
+@lightRed:#fa3432;
+@import "header.less"; 
+/**************************主要内容******************************/
+form{
+	width:5.8rem;
+	margin:0 auto;
+	label{
+		display: block;
+		font-size:.24rem;
+		color:#868484;
+		padding:.34rem 0 .18rem;
+		span{
+			display:none;
+			color:#FA3432;
+			font-size:.2rem;
+			i{
+				display:inline-block;
+				width:.2rem;
+				height:.2rem;
+				line-height:.2rem;
+				text-align: center;
+				-webkit-border-radius:50%; 
+				border-radius:50%; 
+				color:#fff;
+				background:#FA3432;
+				font-style: normal;
+				margin-left: .1rem;
+			}
+		}
+	}
+	.txt1{
+		width:5.8rem;
+		height:.66rem;
+		border-radius:.05rem;
+		border:.01rem solid #DEDDDD;
+		font-size:.22rem;
+		outline:0 none;
+	}
+	textarea{
+		width:5.4rem;
+		padding:.2rem;
+		height:2.6rem;
+		border-radius:.05rem;
+		border:.01rem solid #DEDDDD;
+		font-size:.22rem;
+		resize:none;
+		outline:0 none;
+	}
+	.subm{
+		width:5.8rem;
+		height:.6rem;
+		line-height:.6rem;
+		text-align: center;
+		margin: .3rem 0 .6rem;
+		color:#fff;
+		background: #FA3432;
+		outline: none;
+		border:0 none;
+		-webkit-border-radius:.05rem;
+		border-radius:.05rem;
+		font-size:.24rem;
+	}
+	
+}
+/************************************ 模态框 *********************************/
+.model{
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, 0.5);
+	position:absolute;
+	left:0rem;
+	top:0rem;
+	z-index:5;
+	display: none;
+	.box{
+		display: none;
+		width:5rem;
+		height:1.4rem;
+		background:#fff;
+		position:fixed;
+		left:.6rem;
+		top:30%;
+		-webkit-border-radius:.1rem;
+		border-radius:.1rem;
+		text-align: center;
+		.tips{
+			font-size:.18rem;
+			margin:.2rem 0 .1rem;
+		}
+		.pho{
+			font-size:.14rem;
+			color:#555;
+			margin-bottom:.16rem;
+		}
+		button{
+			width:1.5rem;
+			height:.36rem;
+			line-height:.36rem;
+			color:#fff;
+			font-size:.18rem;
+			background:@lightRed;
+			outline:0 none;
+			border:0 none;
+			-webkit-border-radius:.1rem;
+			border-radius:.1rem;
+		}
+		span{
+			position:absolute;
+			right:.06rem;
+			top:.06rem;
+			background:rgba(0,0,0,0.5);
+			-webkit-border-radius:.13rem;
+			border-radius:.13rem;
+			font-size:.26rem;
+			width:.26rem;
+			height:.26rem;
+			line-height:.22rem;
+			color:#fff;
+			font-family:"微软雅黑";
+		}
+	}
+}
+@import "footer.less";

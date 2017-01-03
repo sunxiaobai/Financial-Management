@@ -1,0 +1,90 @@
+/************************************ 头部 ***********************************/
+@lightRed:#fa3432;
+header{
+	position:relative;
+	z-index:300;
+	h1{
+		height:.8rem;
+		background:@lightRed;
+		color:#fff;
+		text-align: center;
+		font-size:.27rem;
+		line-height:.8rem;
+	}
+	/************** 左侧按钮 **************/
+	.btn_left{
+		position:absolute;
+		left:0rem;
+		top:0rem;
+		width:.8rem;
+		height:.8rem;
+		background:url(../images/ico_top_1.png) no-repeat center center;
+		-webkit-background-size:.39rem .26rem;
+		background-size:.39rem .26rem;
+		z-index:1;
+	}
+	/************** 右侧按钮 **************/
+	.btn_right{
+		position:absolute;
+		right:0rem;
+		top:0rem;
+		width:.8rem;
+		height:.8rem;
+		background:url(../images/ico_top_2.png) no-repeat center center;
+		-webkit-background-size:.36rem .29rem;
+		background-size:.36rem .29rem;
+		z-index:1;
+	}
+	div.boxs{
+		position:absolute;
+		left:0rem;
+		top:.8rem;
+		width:100%;
+		height:1.1rem;
+		background:#fff;
+		z-index:200;
+		display:none;
+		div{
+			position:absolute;
+			left:0rem;
+			top:0rem;
+			height:1.1rem;
+
+			width:100%;
+			-webkit-display:flex;
+			display:flex;
+			-webkit-justify-content:center;
+			justify-content:center;
+			-webkit-align-items:center;
+			align-items:center;
+			.items1{
+				background:url(../images/ico_menu_1.png) center top no-repeat;
+				background-size:.33rem .33rem;
+			}
+			.items2{
+				background:url(../images/ico_menu_2.png) center top no-repeat;
+				background-size:.33rem .33rem;
+			}
+			.items3{
+				background:url(../images/ico_menu_3.png) center top no-repeat;
+				background-size:.33rem .33rem;
+			}
+			.items4{
+				background:url(../images/ico_menu_4.png) center top no-repeat;
+				border:0 none;
+				background-size:.33rem .33rem;
+			}
+			a{
+				padding-top:.4rem;
+				color:@lightRed;
+				text-align: center;
+				width:25%;
+				font-size:.24rem;
+				border-right:.01rem solid red;
+			}
+		}
+	}
+	div.now{
+		display:block;
+	}
+}

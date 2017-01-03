@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>下载客户端</title>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/downLoad.css">
+	</head>
+<body>
+	<div class="sec1">
+		<img src="images/dl_hd.png">
+	</div>
+	<div class="sec2">
+		<a href="">
+			<img src="images/dl_btn.png">
+		</a>
+	</div>
+	<!-- 轮播图 -->
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/dl_slide_0.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/dl_slide_1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/dl_slide_2.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/dl_slide_3.png" alt=""></div>
+        </div>
+    </div>
+	<div class="sec3">
+		<img src="images/dl_03.png">
+	</div>
+	<script src ="js/zepto.min.js"></script>
+	<script src ="js/swiper.min.js"></script>
+	<script>
+		// 轮播图
+
+	    var swiper = new Swiper('.swiper-container', {
+	        paginationClickable: true,
+	        spaceBetween: 30,
+	        centeredSlides: true,
+	        autoplay: 2500,
+	        autoplayDisableOnInteraction: false
+	    });
+
+	</script>
+</body>
+</html>

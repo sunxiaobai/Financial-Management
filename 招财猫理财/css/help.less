@@ -1,0 +1,65 @@
+@import "basic.less";
+
+// 变量
+@lightRed:#fa3432;
+/***********************************头部**********************************/ 
+
+header{
+	position:relative;
+	z-index:300;
+	h1{
+		height:.8rem;
+		background:@lightRed;
+		color:#fff;
+		text-align: center;
+		font-size:.27rem;
+		line-height:.8rem;
+	}
+}
+/***********************************主体部分**********************************/ 
+.main{
+	ul{
+		li{
+			height:.74rem;
+			line-height:.74rem;
+			border-bottom:.01rem solid #dedede;
+			a{
+				color:#494848;
+				h3{
+					margin-left: .8rem;
+					font-size:.26rem;
+				}
+				span{
+					float: right;
+					color:#fa9a33;
+					margin-right:.3rem;
+					font-size:.26rem;
+				}
+			}
+		}
+	}
+}
+/***********************************热线电话**********************************/ 
+.hotLine{
+	background:#fff;
+	border-top:.01rem solid #DEDEDE;
+	border-bottom:.01rem solid #DEDEDE;
+	margin:.2rem 0;
+	dl{
+		padding:.15rem 0 .15rem 1rem;
+		dt{
+			font-size:.24rem;
+			color:#494848;
+			span{
+				color:#16a8d1;
+			}
+		}
+		dd{
+			color:#9d9c9c;
+			font-size:.18rem;
+			margin-top: .08rem;
+			margin-left: -.02rem;
+		}
+	}
+}
+@import "footer.less";

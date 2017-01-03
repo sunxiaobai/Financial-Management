@@ -1,0 +1,22 @@
+/***************************** 底部 ************************/
+footer {
+  margin-top: .2rem;
+  border-top: .01rem solid #e4e4e3;
+  border-bottom: .01rem solid #e4e4e3;
+  background: #fff;
+  color: #494848;
+  text-align: center;
+  padding-top: .3rem;
+}
+footer .version {
+  font-size: .24rem;
+}
+footer .version a {
+  color: #494848;
+  font-size: .24rem;
+}
+footer .copyright {
+  font-size: .2rem;
+  color: #808080;
+  margin: .12rem 0 .3rem;
+}

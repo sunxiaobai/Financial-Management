@@ -1,0 +1,50 @@
+@import "basic.less";
+
+.newItem3,.bg,.outer,.inner,.over50{
+	box-sizing: border-box;
+}
+.newItem3{
+		width:1.2rem;
+		height:1.2rem;
+		line-height:1.2rem;
+		position:relative;
+		.bg{
+			width:1.2rem;
+			height:1.2rem;
+			border-radius:.6rem;
+			font-size: 0.28rem;
+			line-height:1.2rem;
+			text-align: center;
+			color: #fa3b1e;
+			border:.03rem solid #ffe3e1;
+		}
+		.outer{
+			width:1.2rem;
+			height:1.2rem;
+			position:absolute;
+			left:0rem;
+			top:0rem;
+			z-index:1;
+			.inner{
+				width:1.2rem;
+				height:1.2rem;
+				transition:transform .4s;
+				border-radius:.6rem;
+				border:.03rem solid #fa3b1e;
+				position:absolute;
+				left:0rem;
+				top:0rem;
+			}
+		}
+		.over50{
+				width:1.2rem;
+				height:1.2rem;
+				border-radius:.6rem;
+				border:.03rem solid #fa3b1e;
+				position:absolute;
+				left:0rem;
+				top:0rem;
+				clip:rect(0,1.2rem,1.2rem,.6rem);
+			}
+			
+		}

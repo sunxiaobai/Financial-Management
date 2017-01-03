@@ -1,0 +1,291 @@
+/***************************** 基础样式 ***************************/
+html {
+  font-size: 100px;
+  background-color: #f9f9f9;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 64.6875px;
+  }
+}
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 68.75px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px;
+  }
+}
+@media screen and (min-width: 520px) {
+  html {
+    font-size: 81.25px;
+  }
+}
+@media screen and (min-width: 560px) {
+  html {
+    font-size: 87.5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 93.75px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 680px) {
+  html {
+    font-size: 106.25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 112.5px;
+  }
+}
+@media screen and (min-width: 760px) {
+  html {
+    font-size: 118.75px;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 125px;
+  }
+}
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 150px;
+  }
+}
+/*把英文写在前面，中文写后面*/
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "微软雅黑", sans-serif;
+  font-size: .2rem;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+ul,
+li {
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+/**************************头部******************************/
+header {
+  position: relative;
+  z-index: 300;
+}
+header h1 {
+  height: .8rem;
+  background: #fa3432;
+  color: #fff;
+  text-align: center;
+  font-size: .27rem;
+  line-height: .8rem;
+}
+/**************************头部2******************************/
+.header-two {
+  color: #fff;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  background: -webkit-linear-gradient(top, #ff3c01, #d80607);
+  background: -linear-gradient(top, #ff3c01, #d80607);
+}
+.header-two h3 {
+  font-size: .70rem;
+}
+/**************************主体部分******************************/
+.main .item1 {
+  background: #fff;
+  height: .7rem;
+  line-height: .7rem;
+  border-bottom: .02rem solid #f1f1f1;
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.main .item1 p {
+  font-size: .27rem;
+  color: #868686;
+}
+.main .item2 {
+  height: 1.4rem;
+  padding: .5rem .6rem;
+  background: #fff;
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  background-image: url(../images/detail_icon_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.main .item2 div {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.main .item2 p {
+  color: #f7b251;
+  background: url(../images/detail_icon_01.png) no-repeat left center;
+  background-size: .48rem .48rem;
+  padding: .3rem 0rem .3rem .54rem;
+}
+.main .item2 .p2 {
+  background-image: url(../images/detail_icon_02.png);
+}
+.main .item2 .p3 {
+  background-image: url(../images/detail_icon_03.png);
+}
+.main .item2 .p4 {
+  background-image: url(../images/detail_icon_04.png);
+}
+/**************************进度条******************************/
+.progress_box {
+  background: #fff;
+  padding: .3rem .3rem 1.2rem;
+  margin-bottom: .6rem;
+}
+.progress_box .progress_bg {
+  height: .12rem;
+  background: #f0f0f0;
+  border-radius: .06rem;
+  position: relative;
+}
+.progress_box .progress_bg .progress {
+  width: 100%;
+  height: .12rem;
+  transition: width .5s;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  background: #FB0502;
+  border-radius: .06rem;
+}
+.progress_box .progress_bg .progress b {
+  position: absolute;
+  top: -0.4rem;
+  right: -0.22rem;
+  width: .5rem;
+  height: .26rem;
+  line-height: .26rem;
+  border-radius: .05rem;
+  background: #FB0502;
+  color: #fff;
+  font-size: .18rem;
+  text-align: center;
+  font-weight: normal;
+}
+.progress_box .progress_bg .progress b:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: .08rem solid transparent;
+  border-top: .08rem solid #FB0502;
+  position: absolute;
+  bottom: -0.14rem;
+  left: 50%;
+  margin-left: -0.07rem;
+  font-style: normal;
+}
+.progress_box .progress_bg .num {
+  height: .85rem;
+  line-height: .85rem;
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  color: #808080;
+}
+.progress_box .progress_bg .num span {
+  color: #FB0502;
+}
+/**************************底部******************************/
+footer {
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  width: 100%;
+  height: 1.4rem;
+}
+footer .look {
+  display: block;
+  height: .6rem;
+  line-height: .6rem;
+  text-align: center;
+  font-size: .22rem;
+  color: #ADADAD;
+}
+footer div {
+  background: #f0f0f0;
+  padding: .1rem 0 .2rem;
+}
+footer div a {
+  display: inline-block;
+  font-size: .27rem;
+}
+footer div .f1 {
+  color: #FF9900;
+  margin-left: .4rem;
+  border-bottom: .01rem solid #FF9900;
+}
+footer div .f2 {
+  color: #fff;
+  font-size: .28rem;
+  text-align: center;
+  height: .6rem;
+  line-height: .6rem;
+  width: 4rem;
+  background: #FA3432;
+  margin-left: .5rem;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+}

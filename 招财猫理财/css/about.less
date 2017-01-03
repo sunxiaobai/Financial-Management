@@ -1,0 +1,139 @@
+@import "basic.less";
+// 变量
+@lightRed:#fa3432;
+@gray:#868484;
+@80:#808080;
+/**********************************头部***********************************/
+header{
+	position:relative;
+	h1{
+		height:.8rem;
+		background:@lightRed;
+		color:#fff;
+		text-align: center;
+		font-size:.27rem;
+		line-height:.8rem;
+	}
+}
+/**********************************主题部分***********************************/
+.h3{
+	margin: 0 auto .16rem;
+	width:1.42rem;
+	padding:.1rem 0 .12rem;
+	font-size:.27rem;
+	text-align: center;
+	color:#555454;
+	border-bottom: .03px solid #FDB870;
+}
+.main{
+	width:5.4rem;
+	margin: 0 auto;
+	padding:.18rem 0 .3rem;
+	p{
+		font-size:.24rem;
+		color:@gray;
+		text-indent:.48rem;
+		line-height:.34rem;
+		padding:.1rem 0;
+	}
+	h3{
+		.h3;
+	}
+}
+/************************发展历程****************************/
+.dev{
+	width:5.4rem;
+	margin: 0 auto;
+	padding:.2rem .5rem .3rem;
+	
+	h3{
+		.h3;
+	}
+	ul{
+		width:5.8rem;
+		margin:0 auto;
+		li{
+			color:#868484;
+			font-size:.22rem;
+			.sp2{
+				display:inline-block;
+				width:.4rem;
+				vertical-align: middle;
+				.i2{
+					visibility: hidden;
+				}
+				i{
+					display: block;
+					width:.03rem;
+					height:.22rem;
+					background:#FF982B;
+					margin:0 auto;
+				}
+				em{
+					width:.12rem;
+					height:.12rem;
+					-webkit-border-radius:.06rem;
+					border-radius:.06rem;
+					background:#FF982B;
+					display:block;
+					margin:0 auto;
+				}
+			}
+		}
+	}
+}
+/************************资质 荣誉****************************/
+.good{
+	h3{
+		.h3;
+	}
+	/***************************** 轮播图 ***************************/
+	.swiper-container{
+		 width:100%;
+		 position:relative;
+		.swiper-wrapper{
+			width:4.1rem;
+			.swiper-slide{
+			 	text-align: center;
+		        font-size: 18px;
+		        display: -webkit-box;
+		        display: -ms-flexbox;
+		        display: -webkit-flex;
+		        display: flex;
+		        -webkit-box-pack: center;
+		        -webkit-justify-content: center;
+		        justify-content: center;
+		        -webkit-box-align: center;
+		        -webkit-align-items: center;
+		        align-items: center;
+		        img{
+		        	width:4.1rem;
+		        }
+			}
+		}
+		.swiper-button-next{
+			.imgnext{
+				width:.48rem;
+				height:1.47rem;
+       			position:absolute;
+       			right:0;
+       			top:50%;
+       			transform:translate(0,-50%);
+       			z-index:200;
+			}
+		}
+		.swiper-button-prev{
+			.imgprev{
+				width:.48rem;
+				height:1.47rem;
+       			position:absolute;
+       			left:0;
+       			top:50%;
+       			transform:translate(0,-50%);
+       			z-index:200;
+			}	
+		}
+			
+	}
+}
+@import "footer.less";

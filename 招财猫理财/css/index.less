@@ -1,0 +1,201 @@
+@import "basic.less";
+
+// 定义颜色变量
+@4B:#4B4A4A;
+
+/***************************** 头部 ***************************/
+header{
+	height:.85rem;
+	line-height:.85rem;
+	font-size:.26rem;
+	background:#FA3432;
+	padding:0 .2rem;
+	display:flex;
+	color:#fff;
+	justify-content:space-between;
+	a{
+		color:#fff;
+		line-height:.85rem;
+		img{
+			width:.37rem;
+			height:.4rem;
+			margin-top:.2rem;
+			margin-right:.1rem;
+			float: left;
+		}
+	}
+	.a1{
+		width:2rem;
+	}
+}
+/***************************** 轮播图 ***************************/
+.swiper-container{
+	 width:100%;
+	 height:3.1rem;
+	 .swiper-slide{
+	 	text-align: center;
+	        font-size: 18px;
+	        background: #fff;
+	        display: -webkit-box;
+	        display: -ms-flexbox;
+	        display: -webkit-flex;
+	        display: flex;
+	        -webkit-box-pack: center;
+	        -webkit-justify-content: center;
+	        justify-content: center;
+	        -webkit-box-align: center;
+	        -webkit-align-items: center;
+	        align-items: center;
+	        img{
+	        	width:100%;
+	        }
+	 }
+}
+/***************************** 头部导航 ***************************/
+section.header-nav{
+	height:.74rem;
+	line-height:.74rem;
+	background:#fff;
+	color:@4B;
+	font-size: .24rem;
+	display:flex;
+	justify-content:space-around;
+	a{
+		color:@4B;
+	}
+	.cur{
+		color:#fa3432;
+	}
+}
+
+/***************************** 介绍 ***************************/
+section.look{
+	padding:.3rem;
+	font-size:.2rem;
+	display:flex;
+	justify-content:space-around;
+	border-bottom: 1px solid #e4e4e3;
+	background:#fff;
+	a{
+		color:#808080;
+		display:flex;
+		flex-direction:column;
+		img{
+			width:.76rem;
+			height:.76rem;
+			margin-bottom:.05rem;
+		}
+	}
+}
+/***************************** 新手专享 ***************************/
+section.txt h3{
+	height:.8rem;
+	line-height:.8rem;
+	color:#494848;
+	font-size:.28rem;
+	padding-left:.2rem;
+	color:#444;
+	img{
+		display:inline-block;
+		width:.4rem;
+		height:.4rem;
+		vertical-align:middle;
+		padding-right: .1rem;
+	}
+}
+section.newPeople-item{
+	margin:0 .2rem;
+	border:.01rem solid #e4e4e3;
+	background:#fff;
+	padding-bottom: .1rem;
+	p.newP{
+		margin-top:.2rem;
+		margin-left:.2rem;
+		font-size:.25rem;
+		color: #222;
+	}
+	.newPeople-item-one{
+		display:flex;
+		justify-content:space-around;
+		font-size:.2rem;
+		div.newItem1{
+			font-size:.38rem;
+			color:#FB4438;
+			height:1.2rem;
+			line-height:1.2rem;
+			span{
+				color:#FF7F00;
+				font-size:.24rem;
+			}
+		}
+		div.newItem2{
+			height:1.2rem;
+			line-height:.5rem;
+			color:#808080;
+			font-size:.26rem;
+			em{
+				color:#4B4A4A;
+				margin-right: .05rem;
+				font-style: normal;
+			}
+		}
+		@import "circle.less";
+	}   
+}
+/***************************** 热门产品 ************************/
+section.hotGood{
+	a{
+		font-size:.24rem;
+		color:#999;
+		float:right;
+		height:.8rem;
+		line-height:.8rem;
+		margin-right: .3rem;
+	}
+	
+}
+section.two{
+	margin-top:.2rem;
+}
+/***************************** 企业动态 ************************/
+section.news{
+	background:#fff;
+	border-top:1px solid #e4e4e3;
+	border-bottom:1px solid #e4e4e3;
+	padding:.1rem 0 .2rem;
+	ul{
+		li{
+			padding:.2rem .2rem;
+			a{
+				img{
+					width:.96rem;
+					height:.96rem;
+					margin-right: .2rem;
+					float:left;
+				}
+				div{
+					width:5.86rem;
+					.p1{
+						font-size: 0.25rem;
+					    color: #494848;
+					    line-height:0.44rem;
+					    height:0.44rem;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+					}
+					.p2{
+						font-size:.22rem;
+						color:#9a9b9c;
+						margin-top:.1rem;
+						span{
+							float:right;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@import "footer.less";

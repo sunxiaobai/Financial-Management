@@ -1,0 +1,320 @@
+/***************************** 基础样式 ***************************/
+html {
+  font-size: 100px;
+  background-color: #f9f9f9;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 64.6875px;
+  }
+}
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 68.75px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px;
+  }
+}
+@media screen and (min-width: 520px) {
+  html {
+    font-size: 81.25px;
+  }
+}
+@media screen and (min-width: 560px) {
+  html {
+    font-size: 87.5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 93.75px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 680px) {
+  html {
+    font-size: 106.25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 112.5px;
+  }
+}
+@media screen and (min-width: 760px) {
+  html {
+    font-size: 118.75px;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 125px;
+  }
+}
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 150px;
+  }
+}
+/*把英文写在前面，中文写后面*/
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "微软雅黑", sans-serif;
+  font-size: .2rem;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+ul,
+li {
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+/************************************ 头部 ***********************************/
+header {
+  position: relative;
+  z-index: 300;
+  /************** 左侧按钮 **************/
+  /************** 右侧按钮 **************/
+}
+header h1 {
+  height: .8rem;
+  background: #fa3432;
+  color: #fff;
+  text-align: center;
+  font-size: .27rem;
+  line-height: .8rem;
+}
+header .btn_left {
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  width: .8rem;
+  height: .8rem;
+  background: url(../images/ico_top_1.png) no-repeat center center;
+  -webkit-background-size: .39rem .26rem;
+  background-size: .39rem .26rem;
+  z-index: 1;
+}
+header .btn_right {
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  width: .8rem;
+  height: .8rem;
+  background: url(../images/ico_top_2.png) no-repeat center center;
+  -webkit-background-size: .36rem .29rem;
+  background-size: .36rem .29rem;
+  z-index: 1;
+}
+header div.boxs {
+  position: absolute;
+  left: 0rem;
+  top: .8rem;
+  width: 100%;
+  height: 1.1rem;
+  background: #fff;
+  z-index: 200;
+  display: none;
+}
+header div.boxs div {
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  height: 1.1rem;
+  width: 100%;
+  -webkit-display: flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+header div.boxs div .items1 {
+  background: url(../images/ico_menu_1.png) center top no-repeat;
+  background-size: .33rem .33rem;
+}
+header div.boxs div .items2 {
+  background: url(../images/ico_menu_2.png) center top no-repeat;
+  background-size: .33rem .33rem;
+}
+header div.boxs div .items3 {
+  background: url(../images/ico_menu_3.png) center top no-repeat;
+  background-size: .33rem .33rem;
+}
+header div.boxs div .items4 {
+  background: url(../images/ico_menu_4.png) center top no-repeat;
+  border: 0 none;
+  background-size: .33rem .33rem;
+}
+header div.boxs div a {
+  padding-top: .4rem;
+  color: #fa3432;
+  text-align: center;
+  width: 25%;
+  font-size: .24rem;
+  border-right: .01rem solid red;
+}
+header div.now {
+  display: block;
+}
+/**********************************主体部分***********************************/
+section div {
+  padding-bottom: .3rem;
+  border-bottom: 0.01rem dashed #fa3432;
+}
+section div dl {
+  font-size: .22rem;
+  width: 5.5rem;
+  margin: 0 auto;
+}
+section div dl dt {
+  color: #FA3432;
+  line-height: .9rem;
+  font-size: .22rem;
+}
+section div dl dt i {
+  display: inline-block;
+  width: .3rem;
+  height: .3rem;
+  font-size: .22rem;
+  line-height: .3rem;
+  text-align: center;
+  border-radius: .15rem;
+  background: #FA3432;
+  color: #fff;
+  margin-right: .16rem;
+  font-style: normal;
+}
+section div dl dd {
+  color: #868484;
+  width: 5.5rem;
+  margin: 0rem;
+  font-size: .22rem;
+  line-height: .32rem;
+}
+section .dLast {
+  border: 0 none;
+}
+/************************************ 模态框 *********************************/
+.model {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  z-index: 5;
+  display: none;
+}
+.model .box {
+  width: 5rem;
+  height: 1.4rem;
+  background: #fff;
+  position: fixed;
+  left: .6rem;
+  top: 30%;
+  -webkit-border-radius: .1rem;
+  border-radius: .1rem;
+  text-align: center;
+}
+.model .box .tips {
+  font-size: .18rem;
+  margin: .2rem 0 .1rem;
+}
+.model .box .pho {
+  font-size: .14rem;
+  color: #555;
+  margin-bottom: .16rem;
+}
+.model .box button {
+  width: 1.5rem;
+  height: .36rem;
+  line-height: .36rem;
+  color: #fff;
+  font-size: .18rem;
+  background: #fa3432;
+  outline: 0 none;
+  border: 0 none;
+  -webkit-border-radius: .1rem;
+  border-radius: .1rem;
+}
+.model .box span {
+  position: absolute;
+  right: .06rem;
+  top: .06rem;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: .13rem;
+  border-radius: .13rem;
+  font-size: .26rem;
+  width: .26rem;
+  height: .26rem;
+  line-height: .22rem;
+  color: #fff;
+  font-family: "微软雅黑";
+}
+/***************************** 底部 ************************/
+footer {
+  margin-top: .2rem;
+  border-top: .01rem solid #e4e4e3;
+  border-bottom: .01rem solid #e4e4e3;
+  background: #fff;
+  color: #494848;
+  text-align: center;
+  padding-top: .3rem;
+}
+footer .version {
+  font-size: .24rem;
+}
+footer .version a {
+  color: #494848;
+  font-size: .24rem;
+}
+footer .copyright {
+  font-size: .2rem;
+  color: #808080;
+  margin: .12rem 0 .3rem;
+}
